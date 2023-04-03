@@ -129,9 +129,9 @@ button,
     --button-border-radius: var(--border-radius);
 
     /* Colors */
-    /* --button-bg-default: transparent; */
-    --button-bg-default: var(--color-primary);
-    /* --button-bg-primary: ; */
+    --button-bg-default: inherit;
+    --button-bg-primary: var(--color-primary);
+    --button-bg-secondary: var(--color-secondary);
     --button-bg-hover: #673b3b60;
 
     display: inline-block;
@@ -143,10 +143,27 @@ button,
     border: none;
     border-radius: var(--button-border-radius);
     background-color: var(--button-bg-default);
-    color: black;
+    color: inherit;
     font-family: var(--font-general);
     font-weight: bold;
-    transition: background-color .15s ease-in-out, box-shadow .25s ease-in-out;
+    transition: background-color .15s ease-in-out;
+}
+
+button.primary,
+.button.primary {
+    background-color: var(--button-bg-primary);
+    color: var(--color-default-dark);
+}
+
+button.secondary,
+.button.secondary {
+    background-color: var(--button-bg-secondary);
+    color: var(--color-default-light);
+}
+
+button.icon,
+.button.icon {
+    border-radius: 50%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -171,4 +188,28 @@ button,
 
 .button.edge-end {
     margin-right: calc(var(--button-pad-x) * -1);
+}
+/* Button styles ends here */
+
+
+
+/* Toolbar */
+.toolbar {
+    --toolbar-height: 76px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: var(--toolbar-height);
+    height: 100%;
+    width: 100%;
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo {
+    color: var(--color-primary);
 }
