@@ -26,16 +26,40 @@
           <a href="/">Area51 Gamers</a>
         </div>
         <div class="actions">
-          <button class="button">
-            <a href="/lifestyle">Lifestyle</a>
-          </button>
-          <button class="button secondary">
+          <nav>
+            <ul class="invisible" id="nav-menu">
+              <li>
+                <a href="/products" class="button">Products</a>
+              </li>
+              <li>
+                <a href="/community" class="button">Community</a>
+              </li>
+              <li>
+                <a href="/payments" class="button">Payments</a>
+              </li>
+              <li>
+                <a href="/lifestyle" class="button">Lifestyle</a>
+              </li>
+              <li>
+                <a href="/about" class="button">About Us</a>
+              </li>
+              <li>
+                <a href="/contact" class="button">Contact Us</a>
+              </li>
+            </ul>
+            <button type="button" class="button nav-toggle" id="nav-toggle" aria-controls="menu" aria-expanded="false">
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+          </nav>
+          <a href="/account" class="button icon secondary">
             <span class="material-symbols-outlined">person</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>
   </header>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
