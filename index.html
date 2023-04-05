@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#9C27B0">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#E1BEE7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@500&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/globals.css">
-    <link rel="stylesheet" href="css/components.css">
-    <title>Area51 Gamers</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/globals.css">
+  <link rel="stylesheet" href="css/components.css">
+  <title>Area51 Gamers</title>
 </head>
+
 <body>
-    <footer>
+  <header>
+    <div class="container">
+      <div class="toolbar">
+        <div class="logo">
+          <a href="/">Area51 Gamers</a>
+        </div>
+        <div class="actions">
+          <nav>
+            <ul class="invisible" id="nav-menu">
+              <li>
+                <a href="/products" class="button">Products</a>
+              </li>
+              <li>
+                <a href="/community" class="button">Community</a>
+              </li>
+              <li>
+                <a href="/payments" class="button">Payments</a>
+              </li>
+              <li>
+                <a href="/lifestyle" class="button">Lifestyle</a>
+              </li>
+              <li>
+                <a href="/about" class="button">About Us</a>
+              </li>
+              <li>
+                <a href="/contact" class="button">Contact Us</a>
+              </li>
+            </ul>
+            <button type="button" class="button nav-toggle" id="nav-toggle" aria-controls="menu" aria-expanded="false">
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+          </nav>
+          <a href="/account" class="button icon secondary">
+            <span class="material-symbols-outlined">person</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <footer>
       <div class="footer-content">
         <div class="footerDiv">
           <h6>footer1</h6>
@@ -53,7 +98,10 @@
                   <li><a href="">Lifestyle</a></li>
                 </ul>
               </div>
-  </div>
+      </div>
     </footer>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
