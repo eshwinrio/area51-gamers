@@ -313,16 +313,27 @@ header a {
     color: var(--color-primary);
 }
 
-.footer-content{
-    display: flex;
-    flex-direction: row;
+footer {
+    background-color: var(--color-background-paper);
+    padding-top: calc(var(--dimen-space-default) * 2);
 }
 
-.footerDiv{
-    padding-left: 180px;
-    padding-right: 180px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+footer .category {
+    display: block;
+}
+
+@media (min-width: 576px) {
+    footer .category {
+        display: inline-block;
+        width: 49%;
+    }
+}
+
+@media (min-width: 768px) {
+    footer .category {
+        display: inline-block;
+        width: 32%;
+    }
 }
 
 /* .social-list{
@@ -360,44 +371,44 @@ header a {
     color: aqua;
 } */
 
-.footer-bottom{
+.footer-bottom {
     background: #000;
-    width: 100vw;
-    padding: 20px;
-padding-bottom: 40px;
-    text-align: center;
 }
-.footer-bottom p{
-float: left;
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
-.footer-bottom p a{
-  color:var(--color-primary);
-  font-size: 16px;
-  text-decoration: none;
-}
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}
-.footer-menu{
-  float: right;
 
+.footer-bottom>.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: center;
 }
-.footer-menu ul{
-  display: flex;
+
+.footer-bottom p {
+    margin-block-start: var(--dimen-space-default);
 }
-.footer-menu ul li{
-padding-right: 10px;
-display: block;
+
+.footer-bottom ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: var(--dimen-space-default);
+    margin-block-end: var(--dimen-space-default);
 }
-.footer-menu ul li a{
-  color: #cfd2d6;
-  text-decoration: none;
+
+.footer-bottom ul li {
+    display: inline-block;
+    padding-inline-end: var(--dimen-space-default);
 }
-.footer-menu ul li a:hover{
-  color: #27bcda;
+
+.footer-bottom .button {
+    font-weight: lighter;
+}
+
+.footer-bottom .button:first-child {
+    margin-left: calc(var(--button-pad-x) * -1);
+}
+
+.footer-bottom .button:last-child {
+    margin-right: calc(var(--button-pad-x) * -1);
 }
