@@ -12,7 +12,7 @@
     --color-icon: #FFFFFF;
     --color-divider: #949494;
     --color-background-default: #252525;
-    --color-background-paper: #000000;
+    --color-background-paper: #151515;
     --color-background-navbar: #e3e3e3b2;
     --color-default-light: #fafafa;
     --color-default-dark: #101010;
@@ -70,14 +70,7 @@ img {
         'opsz' 48
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #111;
-    height: auto;
-    width: 100vw;
-    padding-top: 30px;
-    color: #fff;
+a {
+    color: var(--color-primary-light);
+    text-decoration: none;
 }
