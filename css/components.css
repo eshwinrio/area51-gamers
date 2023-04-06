@@ -169,6 +169,11 @@ button.secondary,
     color: var(--color-default-light);
 }
 
+.button.smol {
+    font-size: 0.78em;
+    padding: 0.67rem 0.315rem;
+}
+
 button.icon,
 .button.icon {
     display: flex;
@@ -211,6 +216,33 @@ button.icon>.material-symbols-outlined,
 
 
 
+/* Nav styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+/* Nav styles ends here*/
+
+
+
+/* Header styles */
+header nav {
+    background: #000;
+    overflow-x: auto;
+}
+
+header nav ul {
+    white-space: nowrap;
+}
+/* Header styles ends here */
+
+
+
 /* Toolbar */
 .toolbar {
     --toolbar-height: 76px;
@@ -226,6 +258,7 @@ button.icon>.material-symbols-outlined,
 .toolbar .actions {
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -249,63 +282,10 @@ button.icon>.material-symbols-outlined,
     .toolbar .actions>*:last-child {
         margin-right: 0;
     }
-
-    .toolbar .nav-toggle {
-        display: none;
-    }
 }
 /* Toolbar styles ends here */
 
 
-
-/* Nav styles */
-nav ul {
-    position: fixed;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-background-paper);
-    border-radius: var(--border-radius);
-    transition: all 0.5s ease-in-out;
-}
-
-nav ul .button {
-    width: 100%;
-    padding: var(--dimen-space-default);
-}
-
-nav ul.invisible {
-    display: none;
-}
-
-@media (min-width: 992px) {
-    nav ul {
-        position: relative;
-        display: block;
-        background-color: transparent;
-    }
-
-    nav ul>li {
-        display: inline-block;
-    }
-
-    nav ul .button {
-        width: 100%;
-        padding: var(--button-pad-y) var(--button-pad-x);
-    }
-
-    nav ul.invisible {
-        display: block;
-    }
-}
-/* Nav styles ends here*/
-
-
-
-header a {
-    color: inherit;
-    text-decoration: none;
-}
 
 .logo {
     font-family: var(--font-heading);
@@ -403,12 +383,4 @@ footer .category {
 
 .footer-bottom .button {
     font-weight: lighter;
-}
-
-.footer-bottom .button:first-child {
-    margin-left: calc(var(--button-pad-x) * -1);
-}
-
-.footer-bottom .button:last-child {
-    margin-right: calc(var(--button-pad-x) * -1);
 }
