@@ -58,6 +58,7 @@ h6,
     font-size: var(--heading-6-font-size);
 }
 
+p,
 .body1,
 .body2 {
     font-family: var(--font-general);
@@ -65,12 +66,12 @@ h6,
 }
 
 .body1 {
-    font-size: 0.94rem;
+    font-weight: 400;
     margin: 0;
 }
 
 .body2 {
-    font-size: 0.86rem;
+    font-size: 0.94rem;
     margin: 0;
 }
 
@@ -157,10 +158,21 @@ button,
     transition: background-color .15s ease-in-out;
 }
 
+button:hover,
+.button:hover {
+    background-color: var(--button-bg-hover);
+}
+
 button.primary,
 .button.primary {
     background-color: var(--button-bg-primary);
     color: var(--color-default-dark);
+}
+
+button.primary:hover,
+.button.primary:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-primary);
 }
 
 button.secondary,
@@ -169,46 +181,97 @@ button.secondary,
     color: var(--color-default-light);
 }
 
+button.secondary:hover,
+.button.secondary:hover {
+    background-color: var(--color-secondary-light);
+    color: var(--color-default-dark);
+}
+
+button.smol,
 .button.smol {
     font-size: 0.78em;
-    padding: 0.67rem 0.315rem;
+    padding: 0.54rem 0.315rem;
 }
 
 button.icon,
 .button.icon {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     border-radius: 50%;
     width: 48px;
     height: 48px;
+    font-size: 36px;
+}
+
+button.text.primary,
+.button.text.primary {
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+button.text.primary:hover,
+.button.text.primary:hover {
+    background-color: var(--button-bg-hover);
+    color: var(--color-primary-light);
+}
+
+button.text.secondary,
+.button.text.secondary {
+    background-color: transparent;
+    color: var(--color-secondary);
+}
+
+button.text.secondary:hover,
+.button.text.secondary:hover {
+    background-color: var(--color-bg-hover);
+    color: var(--color-secondary-light);
+}
+
+button.icon.smol,
+.button.icon.smol {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+}
+
+button .material-symbols-outlined,
+.button .material-symbols-outlined {
+    font-size: inherit;
+    vertical-align: text-bottom;
+}
+
+
+
+/* .button .material-symbols-outlined {
+    font-size: inherit;
 }
 
 button.icon>.material-symbols-outlined,
 .button.icon>.material-symbols-outlined {
     font-size: 1.45rem;
-}
+} */
 
 @media (prefers-color-scheme: dark) {
+    button,
     .button {
         --button-bg-hover: #d0b4b460;
     }
 }
 
 @media (prefers-reduced-motion:reduce) {
+    button,
     .button {
         transition: none
     }
 }
 
-.button:hover {
-    background-color: var(--button-bg-hover);
-}
-
+button.edge-start,
 .button.edge-start {
     margin-left: calc(var(--button-pad-x) * -1);
 }
 
+button.edge-end,
 .button.edge-end {
     margin-right: calc(var(--button-pad-x) * -1);
 }
@@ -293,6 +356,11 @@ header nav ul {
     color: var(--color-primary);
 }
 
+main {
+    padding: var(--dimen-space-default) 0;
+}
+
+/* Footer styles */
 footer {
     background-color: var(--color-background-paper);
     padding-top: calc(var(--dimen-space-default) * 2);
@@ -300,6 +368,11 @@ footer {
 
 footer .category {
     display: block;
+}
+
+footer .category ul {
+    list-style: none;
+    padding: 0;
 }
 
 @media (min-width: 576px) {
@@ -384,3 +457,66 @@ footer .category {
 .footer-bottom .button {
     font-weight: lighter;
 }
+/* Footer styles ends here */
+
+
+
+/* Card styles */
+.card {
+    display: block;
+    background-color: var(--color-background-paper);
+    border-radius: var(--border-radius);
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.card.elevated {
+    box-shadow: var(--shadow-type-1);
+}
+
+.card.outlined {
+    border: 1px solid var(--color-divider);
+}
+
+.card-media img {
+    border-radius: var(--border-radius);
+    transition: transform 0.25s ease-in-out;
+}
+
+.card-media img.animated:hover {
+    transform: scale(1.058);
+}
+
+.card.outlined .card-media {
+    padding: 0.5em;
+}
+
+.card.outlined .card-media img {
+    box-shadow: var(--shadow-type-3);
+}
+
+.card .card-header {
+    padding-top: var(--dimen-space-default);
+    padding-right: var(--dimen-space-default);
+    padding-left: var(--dimen-space-default);
+}
+
+.card .card-header h6,
+.card .card-header .h6 {
+    margin: 0 0 0.45em 0;
+}
+
+.card .card-body {
+    padding: var(--dimen-space-default);
+}
+
+.card .card-actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: var(--dimen-space-default);
+    padding-bottom: var(--dimen-space-default);
+    padding-left: var(--dimen-space-default);
+}
+/* Card styles ends here */
