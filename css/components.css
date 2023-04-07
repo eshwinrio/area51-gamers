@@ -169,36 +169,88 @@ button.primary,
     color: var(--color-default-dark);
 }
 
+button.primary:hover,
+.button.primary:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-primary);
+}
+
 button.secondary,
 .button.secondary {
     background-color: var(--button-bg-secondary);
     color: var(--color-default-light);
 }
 
+button.secondary:hover,
+.button.secondary:hover {
+    background-color: var(--color-secondary-light);
+    color: var(--color-default-dark);
+}
+
 button.smol,
 .button.smol {
     font-size: 0.78em;
-    padding: 0.67rem 0.315rem;
+    padding: 0.54rem 0.315rem;
 }
 
 button.icon,
 .button.icon {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     border-radius: 50%;
     width: 48px;
     height: 48px;
+    font-size: 36px;
 }
 
+button.text.primary,
+.button.text.primary {
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+button.text.primary:hover,
+.button.text.primary:hover {
+    background-color: var(--button-bg-hover);
+    color: var(--color-primary-light);
+}
+
+button.text.secondary,
+.button.text.secondary {
+    background-color: transparent;
+    color: var(--color-secondary);
+}
+
+button.text.secondary:hover,
+.button.text.secondary:hover {
+    background-color: var(--color-bg-hover);
+    color: var(--color-secondary-light);
+}
+
+button.icon.smol,
+.button.icon.smol {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+}
+
+button .material-symbols-outlined,
 .button .material-symbols-outlined {
+    font-size: inherit;
+    vertical-align: text-bottom;
+}
+
+
+
+/* .button .material-symbols-outlined {
     font-size: inherit;
 }
 
 button.icon>.material-symbols-outlined,
 .button.icon>.material-symbols-outlined {
     font-size: 1.45rem;
-}
+} */
 
 @media (prefers-color-scheme: dark) {
     button,
@@ -318,6 +370,11 @@ footer .category {
     display: block;
 }
 
+footer .category ul {
+    list-style: none;
+    padding: 0;
+}
+
 @media (min-width: 576px) {
     footer .category {
         display: inline-block;
@@ -423,6 +480,11 @@ footer .category {
 
 .card-media img {
     border-radius: var(--border-radius);
+    transition: transform 0.25s ease-in-out;
+}
+
+.card-media img.animated:hover {
+    transform: scale(1.058);
 }
 
 .card.outlined .card-media {
