@@ -416,10 +416,6 @@ header nav ul {
     color: var(--color-primary);
 }
 
-main {
-    padding: var(--dimen-space-default) 0;
-}
-
 /* Footer styles */
 footer {
     background-color: var(--color-background-paper);

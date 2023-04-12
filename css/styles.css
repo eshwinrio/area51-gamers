@@ -1,4 +1,8 @@
 /* Styles for Home Page */
+#home-page main {
+    padding-bottom: calc(var(--dimen-space-default) * 4);
+}
+
 #promotion .card {
     display: block;
     margin-block-start: var(--dimen-space-default);
@@ -26,3 +30,20 @@
     }
 }
 /* Styles for Home Page ends here */
+
+
+
+/* Styles for Contact Us Page */
+#contact-us-banner {
+    --vertical-padding: calc(var(--dimen-space-default) * 4);
+    background-image: url('../assets/contact-us-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    padding: var(--vertical-padding) 0;
+}
+
+#contact-us-banner h2 {
+    margin-top: 0;
+}
+/* Styles for Contact Us Page ends here */
