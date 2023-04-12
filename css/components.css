@@ -111,7 +111,7 @@ p,
     background: url("/assets/pexels-daniel-putzer-633409.jpg");
 }
 .products #carousal{
-    background: url("/assets/main.jpg");
+    background: url("/assets/high-angle-gamer-playing-laptop.jpg");
 }
 .community h2,
 .products h2{
@@ -646,7 +646,7 @@ footer .category ul {
 .consoles1{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 2em;
+    grid-gap: 2em;
 }
 
 .consoles1 div{
