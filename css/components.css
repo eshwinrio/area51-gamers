@@ -110,7 +110,11 @@ p,
 .community #social{
     background: url("/assets/pexels-daniel-putzer-633409.jpg");
 }
-.community h2{
+.products #carousal{
+    background: url("/assets/main.jpg");
+}
+.community h2,
+.products h2{
     text-align: center;
     padding-top: 200px;
     text-transform: uppercase;
@@ -126,7 +130,7 @@ p,
     text-align: center;
 }
 
-.community #com , .community #begin, .community #live, .community #social{
+.community #com , .community #begin, .community #live, .community #social,.products #carousal{
     
     min-height: 700px;
     background-blend-mode: overlay;
