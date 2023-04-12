@@ -604,3 +604,33 @@ footer .category ul {
     padding: 0.7rem 0.3rem;
 }
 /* Form Element styles ends here */
+
+
+
+#playstation{
+    width: 200px;
+    height:150px;
+}
+#product1{
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 100px;
+   
+}
+
+.consoles1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 2em;
+
+
+    
+}
+
+.consoles1 div{
+/*     align-items: center;
+    align-content: center; */
+    text-align: center;
+    
+
+}
