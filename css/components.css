@@ -608,29 +608,49 @@ footer .category ul {
 
 
 #playstation{
-    width: 200px;
-    height:150px;
+        width: 320px;
+        height: 230px;
+}
+#playstation:hover {
+    border: 5px solid gray;
+}
+#one_row{
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+#one_row .button1{
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-left: 83px;
+    border: 2px solid gray;
+}
+#one_row .button2{
+    padding-right: 28px;
+    padding-left: 40px;
+    border: 2px solid gray;
+}
+#gaming_consoles{
+    margin-left: 55px;
 }
 #product1{
     border: 2px solid gray;
     border-radius: 10px;
-    padding: 100px;
-   
+    padding: 32px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 50px;
 }
 
 .consoles1{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
 grid-gap: 2em;
-
-
-    
 }
 
 .consoles1 div{
 /*     align-items: center;
     align-content: center; */
     text-align: center;
-    
-
 }
