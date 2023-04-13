@@ -34,6 +34,10 @@
 
 
 /* Styles for Contact Us Page */
+#contact-us-page main {
+    padding-bottom: calc(var(--dimen-space-default) * 4);
+}
+
 #contact-us-banner {
     --vertical-padding: calc(var(--dimen-space-default) * 4);
     background-image: url('../assets/contact-us-hero.jpg');
@@ -43,7 +47,35 @@
     padding: var(--vertical-padding) 0;
 }
 
-#contact-us-banner h2 {
-    margin-top: 0;
+#col-physical-assistance {
+    display: block;
+    float: left;
+    margin-block-end: calc(var(--dimen-space-default) * 2);
+}
+
+#contact-us-form {
+    display: block;
+    clear: left;
+    margin-block-start: calc(var(--dimen-space-default) * 2);
+}
+
+@media (min-width: 768px) {
+    #col-physical-assistance {
+        display: inline-block;
+        width: 49%;
+    }
+    
+    #contact-us-form {
+        display: inline-block;
+        width: 49%;
+    }
+}
+
+#contact-us-form .card {
+    width: 100%;
+}
+
+#contact-us-form .form-control {
+    margin-block-end: var(--dimen-space-default);
 }
 /* Styles for Contact Us Page ends here */
