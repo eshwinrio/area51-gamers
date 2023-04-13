@@ -97,18 +97,18 @@ p,
 
 
 .community #com{
-    background: url("/Images/electronic-sports-league-background-3d-illustration_1419-2790.jpg.avif");
+    background: url("/assets/electronic-sports-league-background-3d-illustration_1419-2790.jpg.avif");
 }
 
 .community #begin{
-    background: url("/Images/pexels-florencio-rojas-5688834.jpg"); 
+    background: url("/assets/pexels-florencio-rojas-5688834.jpg"); 
 }
 
 .community #live{
-    background: url("/Images/pexels-yan-krukau-9072343.jpg"); 
+    background: url("/assets/pexels-yan-krukau-9072343.jpg"); 
 }
 .community #social{
-    background: url("/Images/pexels-daniel-putzer-633409.jpg");
+    background: url("/assets/pexels-daniel-putzer-633409.jpg");
 }
 .community h2{
     text-align: center;
