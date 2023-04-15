@@ -110,8 +110,14 @@ p,
 .community #social{
     background: url("/assets/pexels-daniel-putzer-633409.jpg");
 }
-.products #carousal{
-    background: url("/assets/high-angle-gamer-playing-laptop.jpg");
+#carousal{
+    background: url("/assets/gaming-setup-with-computer-chair.jpg");
+    min-height: 500px;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
 }
 .community h2,
 .products h2{
@@ -655,6 +661,19 @@ footer .category ul {
     padding-left: 0px;
     padding-right: 0px;
     margin: 50px;
+}
+
+.products{
+
+        background: url("/assets/p2.jpeg");
+    
+        min-height: 500px;
+        background-blend-mode: overlay;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);  
+    
 }
 
 .consoles1{
