@@ -700,3 +700,17 @@ footer .category ul {
     align-content: center; */
     text-align: center;
 }
+
+@media all and (max-width:1024px) {
+
+    .consoles1 {
+
+        display: block;
+
+    }
+
+    #product1 {
+
+        max-width: 100%;
+    }
+}
