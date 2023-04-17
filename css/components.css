@@ -431,6 +431,7 @@ footer .category ul {
 .card-media img {
     border-radius: var(--border-radius);
     transition: transform 0.25s ease-in-out;
+    width: 100%;
 }
 
 .card-media img.animated:hover {
