@@ -384,7 +384,7 @@ footer .category ul {
     }
 }
 
-.footer-bottom{
+.footer-bottom {
     background: #000;
 }
 
@@ -395,6 +395,19 @@ footer .category ul {
     justify-content: space-between;
     align-items: baseline;
     align-content: center;
+}
+
+.footer-content {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.footer-div {
+    flex: 50%;
+    margin-right: 400px;
 }
 
 .footer-bottom p {
@@ -416,6 +429,16 @@ footer .category ul {
 
 .footer-bottom .button {
     font-weight: lighter;
+}
+
+footer #subscription-form {
+    max-width: 320px;
+    margin-top: var(--dimen-space-default);
+    margin-bottom: calc(var(--dimen-space-default) * 2);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: var(--dimen-space-default);
+    align-items: end;
 }
 
 /* Footer styles ends here */
@@ -479,6 +502,7 @@ footer .category ul {
     padding-bottom: var(--dimen-space-default);
     padding-left: var(--dimen-space-default);
 }
+
 /* Card styles ends here */
 
 
@@ -514,6 +538,7 @@ footer .category ul {
     border: var(--border-default);
     padding: 0.7rem 0.3rem;
 }
+
 /* Form Element styles ends here */
 
 
@@ -535,6 +560,7 @@ footer .category ul {
 @media (min-width: 768px) {
     .banner * {
         text-align: center;
-    }   
+    }
 }
+
 /* Banner styles ends here */
