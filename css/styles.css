@@ -95,3 +95,33 @@
     margin-top: var(--dimen-space-default);
 }
 /* Styles for Contact Us Page ends here */
+
+
+
+/* Styles for Products page */
+#products-page main {
+    padding-bottom: calc(var(--dimen-space-default) * 4);
+}
+
+#products-page .banner {
+    background-image: url("/assets/pexels-max-deroin-249203.jpg");
+}
+
+#products-page section .card {
+    display: block;
+    width: 100%;
+    margin-block-end: var(--dimen-space-default);
+}
+
+@media (min-width: 768px) {
+    #products-page section .card {
+        display: inline-block;
+        width: 48%;
+        margin-inline-end: var(--dimen-space-default);
+    }
+
+    #products-page section .card:nth-last-of-type(odd) {
+        margin-inline-end: 0;
+    }
+}
+/* Styles for Products page ends here */
