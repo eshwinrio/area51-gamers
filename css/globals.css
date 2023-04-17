@@ -11,7 +11,7 @@
     --color-text-secondary: #bdbdbd;
     --color-icon: #FFFFFF;
     --color-divider: #949494;
-    --color-background-default: #252525;
+    --color-background-default: #282828;
     --color-background-paper: #151515;
     --color-background-navbar: #e3e3e3b2;
     --color-default-light: #fafafa;
@@ -23,6 +23,7 @@
     --dimen-navbar-height: calc(var(--dimen-space-default) * 4);
 
     /* Shapes */
+    --border-default: 1px solid var(--color-divider);
     --border-radius: 4px;
 
     /* Shadows */

@@ -19,7 +19,7 @@
   <title>Area51 Gamers</title>
 </head>
 
-<body id="home-page">
+<body id="contact-us-page">
   <header>
     <div class="container">
       <div class="toolbar">
@@ -58,47 +58,61 @@
   </header>
 
   <main>
-    <section class="container" id="promotion">
-      <h2>New Releases</h2>
-      <div>
-        <div class="card outlined" id="rogAlly">
-          <div class="card-media">
-            <img src="assets/rog_ally.jpeg" alt="ROG Ally handheld console" class="animated">
-          </div>
-          <div class="card-header">
-            <h6>ASUS ROG ALLY</h6>
-            <p class="body2">Playtime. Anytime.</p>
-          </div>
-          <div class="card-body">
-            <p class="body1">ROG Ally Gaming Handheld is a new way to play any game library. Powered by AMD and runs on Windows OS. Expected to have a 16:9, 1080p touchscreen display with a 120Hz refresh rate. Visit ASUS official site to learn more about the launch.</p>
-          </div>
-          <div class="card-actions">
-            <a href="https://www.asus.com/ca-en/site/gaming/rog/handheld-consoles/rog-ally/" class="button smol">
-              <span>ASUS</span>
-              <span class="material-symbols-outlined">open_in_new</span>
-            </a>
-          </div>
-        </div>
-        <div class="card outlined" id="sonyPs5">
-          <div class="card-media">
-            <img src="assets/sony_ps5.jpg" alt="Sony PS5 console" class="animated">
-          </div>
-          <div class="card-header">
-            <h6>PlayStation® 5 Black Edition</h6>
-            <p class="body2">Play has no limits</p>
-          </div>
-          <div class="card-body">
-            <p class="body1">Experience lightning-fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback1, adaptive triggers1 and 3D Audio*, and an all-new generation of incredible PlayStation games.</p>
-          </div>
-          <div class="card-actions">
-            <a href="https://www.playstation.com/en-ca/ps5/" class="button smol">
-              <span>PlayStation®</span>
-              <span class="material-symbols-outlined">open_in_new</span>
-            </a>
-          </div>
-        </div>
+    <div id="contact-us-banner">
+      <div class="container">
+        <span class="h6">Got a question?</span>
+        <h2>Contact Us</h2>
+        <p class="body1">We value your feedback and would love to hear from you! If you have any questions, comments, or
+          concerns, please don't hesitate to reach out to us. Our friendly and knowledgeable customer service team is
+          available to assist you with any inquiries you may have. You can contact us by phone, email, or through our
+          online contact form. We strive to respond to all inquiries within 24 hours and look forward to hearing from
+          you.</p>
       </div>
-    </section>
+    </div>
+    <div class="container">
+      <div id="col-physical-assistance">
+        <h2>Get in touch!</h2>
+        <p class="body1">Have a question? Concern? Request? We’d love to hear from you. Connect with us through the following ways.</p>
+        <h3 class="h5">Address</h3>
+        <p class="body2">49 Frederick St, Kitchener, ON N2H 6M7</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2418.10969048553!2d-80.48935694444847!3d43.450757861832884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf5fd1d65361b%3A0xc7775976a3eb1b96!2sConestoga%20College%20-%20Kitchener%20Downtown!5e0!3m2!1sen!2sca!4v1681753803335!5m2!1sen!2sca" id="gmap" class="card" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3 class="h5">Phone lines</h3>
+        <p class="body2">Tel/Text: <a href="tel:+16478947569">(647) 894-7569</a></p>
+        <p class="body2">Fax: <a href="tel:+10101438400">(010) 143-8400</a></p>
+        <h3 class="h5">Email Addresses</h3>
+        <p class="body2">Customer Care: <a href="mailto:cscare@area51gamers.com">cscare@area51gamers.com</a></p>
+        <p class="body2">Complaints/Feedback: <a href="mailto:feedback@area51gamers.com">feedback@area51gamers.com</a></p>
+      </div>
+      <form action="#" id="contact-us-form">
+        <div class="card elevated">
+          <div class="card-header">
+            <h6>Fill out this short form and a member of our team will get back to you within 24 hours</h6>
+          </div>
+          <div class="card-body">
+            <div class="form-control required">
+              <label for="ctus-name">Your name</label>
+              <input type="text" required name="ctus-name" id="ctus-name" class="body1">
+            </div>
+            <div class="form-control required">
+              <label for="ctus-email">Your email</label>
+              <input type="email" required name="ctus-email" id="ctus-email" class="body1">
+            </div>
+            <div class="form-control">
+              <label for="ctus-phone">Your phone</label>
+              <input type="tel" name="ctus-phone" id="ctus-phone" class="body1">
+            </div>
+            <div class="form-control">
+              <label for="ctus-message">Message</label>
+              <textarea rows="3" name="ctus-message" id="ctus-message" class="body1"></textarea>
+            </div>
+          </div>
+          <div class="card-actions">
+            <input type="reset" class="button text secondary" value="Reset">
+            <input type="button" class="button primary" value="Send">
+          </div>
+        </div>
+      </form>
+    </div>
   </main>
 
   <footer>
