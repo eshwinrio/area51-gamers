@@ -397,24 +397,4 @@
     height: 50px;
     border-radius: 10px;
     position: relative;
-    animation-name: logo_area51;
-    animation-duration: 4s;
-    animation-delay: 2s;
-}
-
-@keyframes logo_area51 {
-    0% {
-        left: 0px;
-        top: 0px;
-    }
-
-    50% {
-        left: 200px;
-        top: 0px;
-    }
-
-    100% {
-        left: 0px;
-        top: 0px;
-    }
 }

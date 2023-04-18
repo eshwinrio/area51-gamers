@@ -373,13 +373,13 @@ footer .category ul {
 @media (min-width: 576px) {
     footer .category {
         display: inline-block;
+        vertical-align: text-top;
         width: 49%;
     }
 }
 
 @media (min-width: 768px) {
     footer .category {
-        display: inline-block;
         width: 32%;
     }
 }
