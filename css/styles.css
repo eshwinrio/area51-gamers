@@ -95,3 +95,138 @@
     margin-top: var(--dimen-space-default);
 }
 /* Styles for Contact Us Page ends here */
+
+
+
+/* Styles for Products page */
+#products-page main {
+    background-image: url("/assets/12.jpeg");
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+    padding-bottom: calc(var(--dimen-space-default) * 4);
+}
+
+#products-page .banner {
+    background-image: url("/assets/pexels-max-deroin-249203.jpg");
+}
+
+#products-page section .card {
+    display: block;
+    width: 100%;
+    margin-block-end: var(--dimen-space-default);
+}
+
+@media (min-width: 768px) {
+    #products-page section .card {
+        display: inline-block;
+        width: 48%;
+        margin-inline-end: var(--dimen-space-default);
+    }
+
+    #products-page section .card:nth-last-of-type(odd) {
+        margin-inline-end: 0;
+    }
+}
+/* Styles for Products page ends here */
+
+
+
+/* Styles for Community page */
+.community #com{
+    background: url("/assets/electronic-sports-league-background-3d-illustration_1419-2790.jpg.avif");
+}
+
+.community #begin{
+    background: url("/assets/pexels-florencio-rojas-5688834.jpg"); 
+}
+
+.community #live{
+    background: url("/assets/pexels-yan-krukau-9072343.jpg"); 
+}
+.community #social{
+    background: url("/assets/pexels-daniel-putzer-633409.jpg");
+}
+#carousal{
+    background: url("/assets/pexels-max-deroin-249203.jpg");
+    min-height: 500px;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.1);
+}
+.community h2 {
+    text-align: center;
+    padding-top: 200px;
+    text-transform: uppercase;
+    margin: 0%;
+}
+.community p{
+    /* padding-bottom: 100px; */
+    
+    text-align: center;
+    margin-bottom: 0%;
+}
+.community .link{
+    text-align: center;
+}
+
+.community #com , .community #begin, .community #live, .community #social,.products #carousal{
+    
+    min-height: 700px;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-color: rgba(0,0,0,0.8);
+    margin-bottom: 0px;
+    padding-bottom: 0%;
+}
+
+.products #carousal{
+    
+    min-height: 650px;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    margin-bottom: 0px;
+    padding-bottom: 0%;
+}
+
+.community img{
+    width: 100px;
+}
+
+.com_social-links ul li{
+    list-style: none;
+    display: inline-block;
+    
+} 
+
+.com_social-links{
+text-align: center;
+}
+/* Styles for community page ends here */
+
+#logo_area51{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+    animation-name: logo_area51;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+@keyframes logo_area51 {
+    0%   {left:0px; top:0px;}
+    50%  {left:200px; top:0px;}
+    100% {left:0px; top:0px;}
+  }
