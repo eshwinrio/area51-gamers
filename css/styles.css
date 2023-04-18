@@ -97,6 +97,76 @@
 
 
 
+/* Styles for About Us page */
+#about-us-page .banner {
+    background-image: url("/assets/reaact.jpg");
+}
+
+#about-us-page #career {
+    padding: calc(var(--dimen-space-default) * 4) 0;
+    background-image: url("/assets/gamer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+#about-us-page #history ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about-us-page #history ul>li{
+    margin-block-end: var(--dimen-space-default);
+    background-color: var(--color-background-paper);
+    padding: var(--dimen-space-default);
+    border-radius: var(--border-radius);
+}
+
+#about-us-page #team .card {
+    display: block;
+    width: 100%;
+    margin-block-end: var(--dimen-space-default);
+}
+
+@media (min-width: 768px) {
+    #about-us-page #team .container>div {
+        text-align: justify;
+    }
+
+    #about-us-page #team .card {
+        display: inline-block;
+        max-width: 49%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #about-us-page #team .card {
+        width: 31%;
+        margin-inline-start: var(--dimen-space-default);
+    }
+
+    #about-us-page #team .card:first-child {
+        margin-inline-start: 0;
+    }
+}
+
+#about-us-page #promotion .card {
+    display: block;
+    width: 100%;
+    margin-block-end: var(--dimen-space-default);
+}
+
+@media (min-width: 1024px) {
+    #about-us-page #promotion .container>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: var(--dimen-space-default);
+    }
+}
+/* Styles for About Us Page ends here */
+
+
+
 /* Styles for Products page */
 #products-page main {
     background-image: url("/assets/12.jpeg");
