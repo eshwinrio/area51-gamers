@@ -429,6 +429,7 @@
     margin-right: auto;
     margin-left: auto;
     margin-top:30px;
+    text-align: center;
 }
 .container3 div p{
     text-align: center;
@@ -458,6 +459,16 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: var(--dimen-space-default);
 } */
+#load{
+    background-color: #000;
+    margin-top: 40PX;
+}
+#load::shadow{
+    color: #44d62c;
+}
+#load:hover{
+    border: 4px solid #44d62c;
+}
 .container2 {
     --gutter-x: 1.5rem;
     --gutter-y: 0;
