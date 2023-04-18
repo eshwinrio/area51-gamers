@@ -32,12 +32,14 @@ h2,
 .h2 {
     --heading-2-font-size: 2.441rem;
     font-size: var(--heading-2-font-size);
+    color: var(--color-primary);
 }
 
 h3,
 .h3 {
     --heading-3-font-size: 1.953rem;
     font-size: var(--heading-3-font-size);
+    color: var(--color-primary);
 }
 
 h4,
@@ -374,42 +376,7 @@ footer .category ul {
     }
 }
 
-/* .social-list{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-}
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-    flex-direction: row;
-}
-.socials li{
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-}
-.socials a{
-    text-decoration: none;
-    color: #fff;
-    border: 1.1px solid white;
-    padding: 5px;
-    border-radius: 50%;
-}
-.socials a i{
-    font-size: 1.1rem;
-    width: 20px;
-    transition: color .4s ease;
-}
-.socials a:hover i{
-    color: aqua;
-} */
-
-.footer-bottom {
+.footer-bottom{
     background: #000;
 }
 
@@ -451,8 +418,6 @@ footer .category ul {
     display: block;
     background-color: var(--color-background-paper);
     border-radius: var(--border-radius);
-    width: -moz-fit-content;
-    width: fit-content;
 }
 
 .card.elevated {
@@ -466,6 +431,7 @@ footer .category ul {
 .card-media img {
     border-radius: var(--border-radius);
     transition: transform 0.25s ease-in-out;
+    width: 100%;
 }
 
 .card-media img.animated:hover {
