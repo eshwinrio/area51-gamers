@@ -3,29 +3,28 @@
     padding-bottom: calc(var(--dimen-space-default) * 4);
 }
 
-#promotion .card {
+#home-page #promotion .card {
     display: block;
     margin-block-start: var(--dimen-space-default);
 }
 
-#promotion .card:first-child {
+#home-page #promotion .card:first-child {
     margin-block-start: 0;
 }
 
 @media (min-width: 992px) {
-    #promotion .card {
+    #home-page #promotion .card {
         display: inline-block;
-        
         width: 49%;
     }
 }
 
 @media (min-width: 1200px) {
-    #promotion .card {
+    #home-page #promotion .card {
         margin-inline-start: var(--dimen-space-default);
     }
 
-    #promotion .card:first-child {
+    #home-page #promotion .card:first-child {
         margin-inline-start: 0;
     }
 }

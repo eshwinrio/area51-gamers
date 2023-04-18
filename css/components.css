@@ -32,12 +32,14 @@ h2,
 .h2 {
     --heading-2-font-size: 2.441rem;
     font-size: var(--heading-2-font-size);
+    color: var(--color-primary);
 }
 
 h3,
 .h3 {
     --heading-3-font-size: 1.953rem;
     font-size: var(--heading-3-font-size);
+    color: var(--color-primary);
 }
 
 h4,
@@ -416,8 +418,6 @@ footer .category ul {
     display: block;
     background-color: var(--color-background-paper);
     border-radius: var(--border-radius);
-    width: -moz-fit-content;
-    width: fit-content;
 }
 
 .card.elevated {
