@@ -80,6 +80,7 @@ p,
 .text-center {
     text-align: center;
 }
+
 /* Typography styles ends here */
 
 
@@ -125,6 +126,7 @@ p,
         max-width: 1320px;
     }
 }
+
 /* Responsive container styles ends here */
 
 
@@ -244,6 +246,7 @@ button .material-symbols-outlined,
 }
 
 @media (prefers-color-scheme: dark) {
+
     button,
     .button {
         --button-bg-hover: #d0b4b460;
@@ -251,6 +254,7 @@ button .material-symbols-outlined,
 }
 
 @media (prefers-reduced-motion:reduce) {
+
     button,
     .button {
         transition: none
@@ -266,6 +270,7 @@ button.edge-end,
 .button.edge-end {
     margin-right: calc(var(--button-pad-x) * -1);
 }
+
 /* Button styles ends here */
 
 
@@ -280,6 +285,7 @@ nav ul {
 nav ul li {
     display: inline-block;
 }
+
 /* Nav styles ends here*/
 
 
@@ -293,6 +299,7 @@ header nav {
 header nav ul {
     white-space: nowrap;
 }
+
 /* Header styles ends here */
 
 
@@ -337,6 +344,7 @@ header nav ul {
         margin-right: 0;
     }
 }
+
 /* Toolbar styles ends here */
 
 
@@ -409,6 +417,7 @@ footer .category ul {
 .footer-bottom .button {
     font-weight: lighter;
 }
+
 /* Footer styles ends here */
 
 

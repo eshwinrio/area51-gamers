@@ -28,6 +28,7 @@
         margin-inline-start: 0;
     }
 }
+
 /* Styles for Home Page ends here */
 
 
@@ -73,7 +74,7 @@
         width: 49%;
         padding-inline-end: var(--dimen-space-default);
     }
-    
+
     #contact-us-form {
         display: inline-block;
         width: 49%;
@@ -107,7 +108,7 @@
     background-image: url("/assets/gamer.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 #about-us-page #history ul {
@@ -115,7 +116,7 @@
     padding: 0;
 }
 
-#about-us-page #history ul>li{
+#about-us-page #history ul>li {
     margin-block-end: var(--dimen-space-default);
     background-color: var(--color-background-paper);
     padding: var(--dimen-space-default);
@@ -163,6 +164,7 @@
         column-gap: var(--dimen-space-default);
     }
 }
+
 /* Styles for About Us Page ends here */
 
 
@@ -199,92 +201,168 @@
         margin-inline-end: 0;
     }
 }
+
 /* Styles for Products page ends here */
 
 
 
 /* Styles for Community page */
-.community #com{
-    background: url("/assets/electronic-sports-league-background-3d-illustration_1419-2790.jpg.avif");
+.community #com {
+    background: url("/assets/electronic-sports-league-background.png");
 }
 
-.community #begin{
-    background: url("/assets/pexels-florencio-rojas-5688834.jpg"); 
+.community #begin {
+    background: url("/assets/pexels-florencio-rojas-5688834.jpg");
 }
 
-.community #live{
-    background: url("/assets/pexels-yan-krukau-9072343.jpg"); 
+.community #live {
+    background: url("/assets/pexels-yan-krukau-9072343.jpg");
 }
-.community #social{
+
+.community #social {
     background: url("/assets/pexels-daniel-putzer-633409.jpg");
 }
-#carousal{
-    background: url("/assets/pexels-max-deroin-249203.jpg");
-    min-height: 500px;
-    background-blend-mode: overlay;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.1);
-}
+
 .community h2 {
     text-align: center;
     padding-top: 200px;
     text-transform: uppercase;
     margin: 0%;
 }
-.community p{
+
+.community #statement {
     /* padding-bottom: 100px; */
-    
+
     text-align: center;
     margin-bottom: 0%;
 }
-.community .link{
+
+.community .link {
     text-align: center;
 }
 
-.community #com , .community #begin, .community #live, .community #social,.products #carousal{
-    
+.community #com,
+.community #begin,
+.community #live,
+.community #social {
+
     min-height: 700px;
     background-blend-mode: overlay;
     background-position: center;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-size: cover;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.3);
     margin-bottom: 0px;
     padding-bottom: 0%;
 }
 
-.products #carousal{
-    
-    min-height: 650px;
-    background-blend-mode: overlay;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-size: cover;
-    background-color: rgba(0,0,0,0.3);
-    margin-bottom: 0px;
-    padding-bottom: 0%;
-}
-
-.community img{
+.community img {
     width: 100px;
 }
 
-.com_social-links ul li{
+.team-boxed {
+    color: #313437;
+}
+
+.team-boxed p {
+    color: #7d8285;
+}
+
+.team-boxed h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: white;
+}
+
+@media (max-width:767px) {
+    .team-boxed h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+
+.team-boxed .people {
+    padding: 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainbox {
+    padding: 15px;
+}
+
+.team-boxed .item {
+    text-align: center;
+    text-align: center;
+    max-width: 33.33%;
+}
+
+.team-boxed .item .box {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.team-boxed .item .name {
+    font-weight: bold;
+    margin-top: 28px;
+    margin-bottom: 8px;
+    color: inherit;
+}
+
+.team-boxed .item .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #d0d0d0;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.team-boxed .item .description {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.team-boxed .item img {
+    max-width: 160px;
+}
+
+.team-boxed .social {
+    font-size: 18px;
+    color: #a2a8ae;
+}
+
+.team-boxed .social a {
+    color: inherit;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+.team-boxed .social a:hover {
+    opacity: 1;
+}
+
+
+.com_social-links ul li {
     list-style: none;
     display: inline-block;
-    
-} 
 
-.com_social-links{
-text-align: center;
 }
+
+.com_social-links {
+    text-align: center;
+}
+
 /* Styles for community page ends here */
 
-#logo_area51{
+#logo_area51 {
     width: 100px;
     height: 50px;
     border-radius: 10px;
@@ -295,7 +373,18 @@ text-align: center;
 }
 
 @keyframes logo_area51 {
-    0%   {left:0px; top:0px;}
-    50%  {left:200px; top:0px;}
-    100% {left:0px; top:0px;}
-  }
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    50% {
+        left: 200px;
+        top: 0px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
