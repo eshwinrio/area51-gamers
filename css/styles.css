@@ -8,24 +8,54 @@
     margin-block-start: var(--dimen-space-default);
 }
 
-#home-page #promotion .card:first-child {
-    margin-block-start: 0;
-}
-
-@media (min-width: 992px) {
-    #home-page #promotion .card {
-        display: inline-block;
-        width: 49%;
+@media (min-width: 758px) {
+    #home-page #promotion>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: var(--dimen-space-default);
     }
 }
 
-@media (min-width: 1200px) {
-    #home-page #promotion .card {
-        margin-inline-start: var(--dimen-space-default);
-    }
+#home-page .banner {
+    background-size: cover;
+    background-position: top center;
+    padding-top: calc(var(--dimen-space-default) * 6);
+    padding-bottom: calc(var(--dimen-space-default) * 4);
+}
 
-    #home-page #promotion .card:first-child {
-        margin-inline-start: 0;
+@media (min-width: 768px) {
+    #home-page .banner {
+        padding-top: calc(var(--dimen-space-default) * 14);
+        padding-bottom: calc(var(--dimen-space-default) * 6);
+    }
+}
+
+@media (min-width: 1024px) {
+    #home-page .banner {
+        padding-top: calc(var(--dimen-space-default) * 16);
+        padding-bottom: calc(var(--dimen-space-default) * 10);
+    }
+}
+
+#home-page #banner-one {
+    background-color: #000;
+    background-image:url(/assets/blades.jpg);
+}
+
+#home-page #banner-two {
+    background-color: #000;
+    background-image:url(/assets/controller.jpg);
+}
+
+#home-page #banner-three {
+    background-color: #000;
+    background-image:url(/assets/gamer.jpg);
+}
+
+@media (min-width: 768px) {
+    #home-page #banner-two *,
+    #home-page #banner-three * {
+        text-align: left;
     }
 }
 
@@ -367,24 +397,4 @@
     height: 50px;
     border-radius: 10px;
     position: relative;
-    animation-name: logo_area51;
-    animation-duration: 4s;
-    animation-delay: 2s;
-}
-
-@keyframes logo_area51 {
-    0% {
-        left: 0px;
-        top: 0px;
-    }
-
-    50% {
-        left: 200px;
-        top: 0px;
-    }
-
-    100% {
-        left: 0px;
-        top: 0px;
-    }
 }
