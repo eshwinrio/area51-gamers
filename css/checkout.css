@@ -1,0 +1,81 @@
+main {
+  background-image: url(../assets/checkout-bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: calc(var(--dimen-space-default) * 3) 0;
+    color: #44d62c;
+    font-size: 15px;
+  }
+  #checkout-form {
+    background: #111;
+    width: 318px;
+    margin: 30px auto;
+    border-radius: 0.8em;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .fields {
+    padding: 0px 20px;
+    border-top: 1px solid #44d62c;
+  }
+  
+  form h2 {
+    font-size: 25px;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+  }
+  
+  label {
+    color: white;
+    display: block;
+    padding-bottom: 9px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px 5px;
+    color: white;
+    background: linear-gradient(#1f2124, #27292c);
+    border: 1px solid #222;
+    border-radius: 0.3em;
+    margin-bottom: 20px;
+  }
+  
+  .address, .cardinfo{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .address p,.cardinfo p{
+    width: 45%;
+  }
+
+  .icons i{
+    background: white;
+    padding: 0px 2px;
+    font-size: 30px;
+  }
+
+ .submitbotton{
+    text-align: center;
+ }
+  
+  input[type="submit"] {
+    padding: 5px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 0.5em;
+    background: #44d62c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  input[type="text"]:hover {
+    background: #27292c;
+  }
+  

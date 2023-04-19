@@ -1,0 +1,483 @@
+/* Styles for Home Page */
+#home-page main {
+    padding-bottom: calc(var(--dimen-space-default) * 4);
+}
+
+#home-page #promotion .card {
+    display: block;
+    margin-block-start: var(--dimen-space-default);
+}
+
+@media (min-width: 758px) {
+    #home-page #promotion>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: var(--dimen-space-default);
+    }
+}
+
+#home-page .banner {
+    background-size: cover;
+    background-position: top center;
+    padding-top: calc(var(--dimen-space-default) * 6);
+    padding-bottom: calc(var(--dimen-space-default) * 4);
+}
+
+@media (min-width: 768px) {
+    #home-page .banner {
+        padding-top: calc(var(--dimen-space-default) * 14);
+        padding-bottom: calc(var(--dimen-space-default) * 6);
+    }
+}
+
+@media (min-width: 1024px) {
+    #home-page .banner {
+        padding-top: calc(var(--dimen-space-default) * 16);
+        padding-bottom: calc(var(--dimen-space-default) * 10);
+    }
+}
+
+#home-page #banner-one {
+    background-color: #000;
+    background-image:url(/assets/blades.jpg);
+}
+
+#home-page #banner-two {
+    background-color: #000;
+    background-image:url(/assets/controller.jpg);
+}
+
+#home-page #banner-three {
+    background-color: #000;
+    background-image:url(/assets/gamer.jpg);
+}
+
+@media (min-width: 768px) {
+    #home-page #banner-two *,
+    #home-page #banner-three * {
+        text-align: left;
+    }
+}
+
+/* Styles for Home Page ends here */
+
+
+
+/* Styles for Contact Us Page */
+#contact-us-page main {
+    padding-bottom: calc(var(--dimen-space-default) * 4);
+}
+
+#contact-us-banner {
+    --vertical-padding: calc(var(--dimen-space-default) * 4);
+    background-image: url('../assets/contact-us-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    padding: var(--vertical-padding) 0;
+}
+
+#contact-us-page > main > div.container {
+    overflow: auto;
+}
+
+#col-physical-assistance {
+    display: block;
+    float: left;
+    margin-block-start: calc(var(--dimen-space-default) * 2);
+    margin-block-end: calc(var(--dimen-space-default) * 2);
+}
+
+#col-physical-assistance > h2 {
+    margin-block-start: 0;
+}
+
+#contact-us-form {
+    display: block;
+    clear: left;
+    margin-block-start: calc(var(--dimen-space-default) * 2);
+}
+
+@media (min-width: 768px) {
+    #col-physical-assistance {
+        display: inline-block;
+        width: 49%;
+        padding-inline-end: var(--dimen-space-default);
+    }
+
+    #contact-us-form {
+        display: inline-block;
+        width: 49%;
+    }
+}
+
+#contact-us-form .card {
+    width: 100%;
+}
+
+#contact-us-form .form-control {
+    margin-block-end: var(--dimen-space-default);
+}
+
+#contact-us-page #gmap {
+    width: 100%;
+    height: 10rem;
+    margin-top: var(--dimen-space-default);
+}
+/* Styles for Contact Us Page ends here */
+
+
+
+/* Styles for About Us page */
+#about-us-page .banner {
+    background-image: url("/assets/reaact.jpg");
+}
+
+#about-us-page #career {
+    padding: calc(var(--dimen-space-default) * 4) 0;
+    background-image: url("/assets/gamer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#about-us-page #history ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about-us-page #history ul>li {
+    margin-block-end: var(--dimen-space-default);
+    background-color: var(--color-background-paper);
+    padding: var(--dimen-space-default);
+    border-radius: var(--border-radius);
+}
+
+#about-us-page #team .card {
+    display: block;
+    width: 100%;
+    margin-block-end: var(--dimen-space-default);
+}
+
+@media (min-width: 768px) {
+    #about-us-page #team .container>div {
+        text-align: justify;
+    }
+
+    #about-us-page #team .card {
+        display: inline-block;
+        max-width: 49%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #about-us-page #team .card {
+        width: 31%;
+        margin-inline-start: var(--dimen-space-default);
+    }
+
+    #about-us-page #team .card:first-child {
+        margin-inline-start: 0;
+    }
+}
+
+#about-us-page #promotion .card {
+    display: block;
+    width: 100%;
+    margin-block-end: var(--dimen-space-default);
+}
+
+@media (min-width: 1024px) {
+    #about-us-page #promotion .container>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: var(--dimen-space-default);
+    }
+}
+
+/* Styles for About Us Page ends here */
+
+
+
+/* Styles for Products page */
+#products-page main {
+    background-image: url("/assets/12.jpeg");
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+    padding-bottom: calc(var(--dimen-space-default) * 4);
+}
+
+#products-page .banner {
+    background-image: url("/assets/pexels-max-deroin-249203.jpg");
+}
+
+#products-page section .card {
+    display: block;
+    width: 100%;
+    margin-block-end: var(--dimen-space-default);
+}
+
+@media (min-width: 768px) {
+    #products-page section .card {
+        display: inline-block;
+        width: 48%;
+        margin-inline-end: var(--dimen-space-default);
+    }
+
+    #products-page section .card:nth-last-of-type(odd) {
+        margin-inline-end: 0;
+    }
+}
+
+/* Styles for Products page ends here */
+
+
+
+/* Styles for Community page */
+.community #com {
+    background: url("/assets/electronic-sports-league-background.png");
+}
+
+.community #begin {
+    background: url("/assets/pexels-florencio-rojas-5688834.jpg");
+}
+
+.community #live {
+    background: url("/assets/pexels-yan-krukau-9072343.jpg");
+}
+
+.community #social {
+    background: url("/assets/pexels-daniel-putzer-633409.jpg");
+}
+
+.community h2 {
+    text-align: center;
+    padding-top: 200px;
+    text-transform: uppercase;
+    margin: 0%;
+}
+
+.community #statement {
+    /* padding-bottom: 100px; */
+
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.community .link {
+    text-align: center;
+}
+
+.community #com,
+.community #begin,
+.community #live,
+.community #social {
+
+    min-height: 700px;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 0px;
+    padding-bottom: 0%;
+}
+
+.community img {
+    width: 100px;
+}
+
+.team-boxed {
+    color: #313437;
+}
+
+.team-boxed p {
+    color: #7d8285;
+}
+
+.team-boxed h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: white;
+}
+
+@media (max-width:767px) {
+    .team-boxed h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+
+.team-boxed .people {
+    padding: 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.mainbox {
+    padding: 15px;
+}
+
+.team-boxed .item {
+    text-align: center;
+    text-align: center;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .team-boxed .item {
+        text-align: center;
+        text-align: center;
+        max-width: 33.33%;
+    }   
+}
+
+.team-boxed .item .box {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.team-boxed .item .name {
+    font-weight: bold;
+    margin-top: 28px;
+    margin-bottom: 8px;
+    color: inherit;
+}
+
+.team-boxed .item .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #d0d0d0;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.team-boxed .item .description {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.team-boxed .item img {
+    max-width: 160px;
+}
+
+.team-boxed .social {
+    font-size: 18px;
+    color: #a2a8ae;
+}
+
+.team-boxed .social a {
+    color: inherit;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+.team-boxed .social a:hover {
+    opacity: 1;
+}
+
+
+.com_social-links ul li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+.com_social-links {
+    text-align: center;
+}
+
+/* Styles for community page ends here */
+
+
+
+/* Styles for Lifestyle page */
+#lifestyle-page #categories {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#logo_area51{
+    position: relative;
+}
+
+@keyframes logo_area51 {
+    0%   {left:0px; top:0px;}
+    50%  {left:200px; top:0px;}
+    100% {left:0px; top:0px;}
+  }
+
+.RGB_BUTTONS{
+   flex-direction: row;
+}
+.pubg_button{
+    padding: 19px;
+    background-color: #000;
+    margin: 20px;
+}
+.pubg_button:hover{
+    padding: 16px;
+    margin: 20px;
+    background-color:  #282828;
+    border-inline-end: 3px;
+}
+.container3 {
+    --gutter-x: 1.5rem;
+    --gutter-y: 0;
+    width: 100%;
+    max-width: var(--dimen-max-width);
+    padding-right: calc(var(--gutter-x) * .5);
+    padding-left: calc(var(--gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:30px;
+    text-align: center;
+}
+.container3 div p{
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+#logo51{
+    background-color: #000;
+    display:flex;
+}
+.container3 div img:hover{
+    border: 4px solid #44d62c;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+}
+@media (min-width: 1024px) {
+    .container3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: var(--dimen-space-default);
+    }
+}
+
+#load{
+    background-color: #000;
+    margin-top: 40PX;
+}
+#load::shadow{
+    color: #44d62c;
+}
+#load:hover{
+    border: 4px solid #44d62c;
+}
+
+/* Styles for Lifestyle page ends here */
