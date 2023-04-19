@@ -1,10 +1,15 @@
 main {
+  background-image: url(../assets/checkout-bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: calc(var(--dimen-space-default) * 3) 0;
     color: #44d62c;
     font-size: 15px;
   }
-  form {
+  #checkout-form {
     background: #111;
-    width: 350px;
+    width: 318px;
     margin: 30px auto;
     border-radius: 0.8em;
     overflow: hidden;

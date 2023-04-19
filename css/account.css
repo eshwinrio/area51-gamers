@@ -2,9 +2,9 @@ main {
   color: #44d62c;
   font-size: 15px;
 }
-form {
+#account-form {
   background: #111;
-  width: 350px;
+  width: 318px;
   margin: 30px auto;
   border-radius: 0.8em;
   overflow: hidden;
