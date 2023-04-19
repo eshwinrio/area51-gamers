@@ -318,6 +318,7 @@
     padding: 0px 15px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .mainbox {
@@ -327,7 +328,15 @@
 .team-boxed .item {
     text-align: center;
     text-align: center;
-    max-width: 33.33%;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .team-boxed .item {
+        text-align: center;
+        text-align: center;
+        max-width: 33.33%;
+    }   
 }
 
 .team-boxed .item .box {
@@ -392,6 +401,14 @@
 
 /* Styles for community page ends here */
 
+
+
+/* Styles for Lifestyle page */
+#lifestyle-page #categories {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
 #logo_area51{
     position: relative;
 }
@@ -404,9 +421,6 @@
 
 .RGB_BUTTONS{
    flex-direction: row;
-}
-#lifestyle{
-    margin-left:auto ;
 }
 .pubg_button{
     padding: 19px;
@@ -454,11 +468,7 @@
         column-gap: var(--dimen-space-default);
     }
 }
-/* .container2{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: var(--dimen-space-default);
-} */
+
 #load{
     background-color: #000;
     margin-top: 40PX;
@@ -469,42 +479,5 @@
 #load:hover{
     border: 4px solid #44d62c;
 }
-.container2 {
-    --gutter-x: 1.5rem;
-    --gutter-y: 0;
-    width: 100%;
-    max-width: var(--dimen-max-width);
-    padding-right: calc(var(--gutter-x) * .5);
-    padding-left: calc(var(--gutter-x) * .5);
-    margin-right: auto;
-    margin-left: auto
-}
-@media (min-width: 576px) {
-    .container2 {
-        max-width: 540px;
-    }
-}
 
-@media (min-width: 768px) {
-    .container2 {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container2{
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container2 {
-        max-width: 1140px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .container2 {
-        max-width: 1320px;
-    }
-}
+/* Styles for Lifestyle page ends here */
