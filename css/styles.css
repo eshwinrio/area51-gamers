@@ -39,17 +39,17 @@
 
 #home-page #banner-one {
     background-color: #000;
-    background-image:url(/assets/blades.jpg);
+    background-image:url(../assets/blades.jpg);
 }
 
 #home-page #banner-two {
     background-color: #000;
-    background-image:url(/assets/controller.jpg);
+    background-image:url(../assets/controller.jpg);
 }
 
 #home-page #banner-three {
     background-color: #000;
-    background-image:url(/assets/gamer.jpg);
+    background-image:url(../assets/gamer.jpg);
 }
 
 @media (min-width: 768px) {
@@ -130,12 +130,12 @@
 
 /* Styles for About Us page */
 #about-us-page .banner {
-    background-image: url("/assets/reaact.jpg");
+    background-image: url("../assets/reaact.jpg");
 }
 
 #about-us-page #career {
     padding: calc(var(--dimen-space-default) * 4) 0;
-    background-image: url("/assets/gamer.jpg");
+    background-image: url("../assets/gamer.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -201,7 +201,7 @@
 
 /* Styles for Products page */
 #products-page main {
-    background-image: url("/assets/12.jpeg");
+    background-image: url("../assets/12.jpeg");
     background-blend-mode: overlay;
     background-position: center;
     background-repeat: no-repeat;
@@ -211,7 +211,7 @@
 }
 
 #products-page .banner {
-    background-image: url("/assets/pexels-max-deroin-249203.jpg");
+    background-image: url("../assets/pexels-max-deroin-249203.jpg");
 }
 
 #products-page section .card {
@@ -238,19 +238,19 @@
 
 /* Styles for Community page */
 .community #com {
-    background: url("/assets/electronic-sports-league-background.png");
+    background: url("../assets/electronic-sports-league-background.png");
 }
 
 .community #begin {
-    background: url("/assets/pexels-florencio-rojas-5688834.jpg");
+    background: url("../assets/pexels-florencio-rojas-5688834.jpg");
 }
 
 .community #live {
-    background: url("/assets/pexels-yan-krukau-9072343.jpg");
+    background: url("../assets/pexels-yan-krukau-9072343.jpg");
 }
 
 .community #social {
-    background: url("/assets/pexels-daniel-putzer-633409.jpg");
+    background: url("../assets/pexels-daniel-putzer-633409.jpg");
 }
 
 .community h2 {

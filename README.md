@@ -1,5 +1,7 @@
 # Area-51 Gamers - Web Project
 
+> Hotfix v1.1: Fixed broken links. Live preview used by VSCode Live Preview used root (`/` ) instead of relative pathnames causing the broken links.
+
 The project uses the theme of a imaginary e-commerce platform for gaming products. This project is collaboratively built by:
 
 - [Prince Patel](https://github.com/PPatel2712)
